@@ -86,7 +86,7 @@
                         $diskon = $subtotal * 30 / 100;
                         echo $diskon;
                     } else {
-                        echo 0;
+                        echo $diskon = 0;
                     }
                     ?>
                 </td>
