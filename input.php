@@ -54,7 +54,7 @@
                     </label>
                 </td>
                 <td>
-                    <input type="text" name="jumlah" id="jumlah">
+                    <input type="text" name="jumlah" id="jumlah" required>
                 </td>
             </tr>
 
