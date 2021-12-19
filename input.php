@@ -27,8 +27,7 @@
                 </td>
             </tr>
 
-            <tr>
-                <td>Kode Voucher</td>
+            <td>Kode Voucher</td>
                 <td>
                     <select name="kartu" id="kartu">
                         <option value="sp20">sp20</option>
