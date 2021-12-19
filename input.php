@@ -12,41 +12,56 @@
     <h4>Aplikasi Sederhana Penjualan Kartu Perdana</h4>
 
     <form action="output.php" method="post">
-        <table border="1" cellpadding= 5 cellspacing= 0>
+        <table border="1" cellpadding=5 cellspacing=0>
             <tr>
-                <td>Nama Customer</td>
                 <td>
-                    <input type="text" name="nama" id="nama">
+                    <label for="name"></label>
+                    <strong> Nama Customer</strong>
+                </td>
+                <td>
+                    <input type="text" name="nama" id="nama" required>
                 </td>
             </tr>
 
             <tr>
-                <td>Tanggal Beli</td>
+                <td>
+                    <strong>Tanggal Beli</strong>
+                </td>
                 <td>
                     <?= date("Y-m-d"); ?>
                 </td>
             </tr>
 
-            <td>Kode Voucher</td>
-                <td>
-                    <select name="kartu" id="kartu">
-                        <option value="sp20">sp20</option>
-                        <option value="sm50">sm50</option>
-                        <option value="m310">m310</option>
-                        <option value="xl50">xl50</option>
-                    </select>
-                </td>
+            <td>
+                <label for="kartu">
+                    <strong> Kode Voucher</strong>
+                </label>
+            </td>
+            <td>
+                <select name="kartu" id="kartu">
+                    <option value="sp20">sp20</option>
+                    <option value="sm50">sm50</option>
+                    <option value="m310">m310</option>
+                    <option value="xl50">xl50</option>
+                </select>
+            </td>
             </tr>
 
             <tr>
-                <td>Jumlah Beli</td>
+                <td>
+                    <label for="jumlah">
+                        <strong> Jumlah Beli</strong>
+                    </label>
+                </td>
                 <td>
                     <input type="text" name="jumlah" id="jumlah">
                 </td>
             </tr>
 
             <tr>
-                <td></td>
+                <td>
+                    <strong>Checkout!</strong>
+                </td>
                 <td>
                     <button type="submit" name="hitung">Hitung</button>
                 </td>
